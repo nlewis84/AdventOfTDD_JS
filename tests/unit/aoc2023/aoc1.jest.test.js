@@ -1,0 +1,173 @@
+import { expect, test } from '@jest/globals';
+import {
+  fizzBuzz,
+  fizzBuzzTwo,
+  fizzBuzzThree,
+  fizzBuzzFour,
+  fizzBuzzFive,
+} from '../../../src/features/fizz-buzz';
+
+test('fizz buzz', () => {
+  expect(fizzBuzz(1)).toBe(1);
+  expect(fizzBuzz(2)).toBe(2);
+  expect(fizzBuzz(3)).toBe('Fizz');
+  expect(fizzBuzz(4)).toBe(4);
+  expect(fizzBuzz(5)).toBe('Buzz');
+  expect(fizzBuzz(6)).toBe('Fizz');
+  expect(fizzBuzz(7)).toBe(7);
+  expect(fizzBuzz(8)).toBe(8);
+  expect(fizzBuzz(9)).toBe('Fizz');
+  expect(fizzBuzz(10)).toBe('Buzz');
+  expect(fizzBuzz(11)).toBe(11);
+  expect(fizzBuzz(12)).toBe('Fizz');
+  expect(fizzBuzz(13)).toBe(13);
+  expect(fizzBuzz(14)).toBe(14);
+  expect(fizzBuzz(15)).toBe('FizzBuzz');
+  expect(fizzBuzz(16)).toBe(16);
+  expect(fizzBuzz(17)).toBe(17);
+  expect(fizzBuzz(18)).toBe('Fizz');
+  expect(fizzBuzz(19)).toBe(19);
+  expect(fizzBuzz(20)).toBe('Buzz');
+  expect(fizzBuzz(21)).toBe('Fizz');
+  expect(fizzBuzz(22)).toBe(22);
+  expect(fizzBuzz(23)).toBe(23);
+  expect(fizzBuzz(24)).toBe('Fizz');
+  expect(fizzBuzz(25)).toBe('Buzz');
+  expect(fizzBuzz(26)).toBe(26);
+  expect(fizzBuzz(27)).toBe('Fizz');
+  expect(fizzBuzz(28)).toBe(28);
+  expect(fizzBuzz(29)).toBe(29);
+  expect(fizzBuzz(30)).toBe('FizzBuzz');
+});
+
+test('fizz buzz two', () => {
+  expect(fizzBuzzTwo(1)).toBe(1);
+  expect(fizzBuzzTwo(2)).toBe(2);
+  expect(fizzBuzzTwo(3)).toBe('Fizz');
+  expect(fizzBuzzTwo(4)).toBe(4);
+  expect(fizzBuzzTwo(5)).toBe('Buzz');
+  expect(fizzBuzzTwo(6)).toBe('Fizz');
+  expect(fizzBuzzTwo(7)).toBe(7);
+  expect(fizzBuzzTwo(8)).toBe(8);
+  expect(fizzBuzzTwo(9)).toBe('Fizz');
+  expect(fizzBuzzTwo(10)).toBe('Buzz');
+  expect(fizzBuzzTwo(11)).toBe(11);
+  expect(fizzBuzzTwo(12)).toBe('Fizz');
+  expect(fizzBuzzTwo(13)).toBe(13);
+  expect(fizzBuzzTwo(14)).toBe(14);
+  expect(fizzBuzzTwo(15)).toBe('FizzBuzz');
+  expect(fizzBuzzTwo(16)).toBe(16);
+  expect(fizzBuzzTwo(17)).toBe(17);
+  expect(fizzBuzzTwo(18)).toBe('Fizz');
+  expect(fizzBuzzTwo(19)).toBe(19);
+  expect(fizzBuzzTwo(20)).toBe('Buzz');
+  expect(fizzBuzzTwo(21)).toBe('Fizz');
+  expect(fizzBuzzTwo(22)).toBe(22);
+  expect(fizzBuzzTwo(23)).toBe(23);
+  expect(fizzBuzzTwo(24)).toBe('Fizz');
+  expect(fizzBuzzTwo(25)).toBe('Buzz');
+  expect(fizzBuzzTwo(26)).toBe(26);
+  expect(fizzBuzzTwo(27)).toBe('Fizz');
+  expect(fizzBuzzTwo(28)).toBe(28);
+  expect(fizzBuzzTwo(29)).toBe(29);
+  expect(fizzBuzzTwo(30)).toBe('FizzBuzz');
+});
+
+test('fizz buzz three', () => {
+  expect(fizzBuzzThree(1)).toBe(1);
+  expect(fizzBuzzThree(2)).toBe(2);
+  expect(fizzBuzzThree(3)).toBe('Fizz');
+  expect(fizzBuzzThree(4)).toBe(4);
+  expect(fizzBuzzThree(5)).toBe('Buzz');
+  expect(fizzBuzzThree(6)).toBe('Fizz');
+  expect(fizzBuzzThree(7)).toBe(7);
+  expect(fizzBuzzThree(8)).toBe(8);
+  expect(fizzBuzzThree(9)).toBe('Fizz');
+  expect(fizzBuzzThree(10)).toBe('Buzz');
+  expect(fizzBuzzThree(11)).toBe(11);
+  expect(fizzBuzzThree(12)).toBe('Fizz');
+  expect(fizzBuzzThree(13)).toBe(13);
+  expect(fizzBuzzThree(14)).toBe(14);
+  expect(fizzBuzzThree(15)).toBe('FizzBuzz');
+  expect(fizzBuzzThree(16)).toBe(16);
+  expect(fizzBuzzThree(17)).toBe(17);
+  expect(fizzBuzzThree(18)).toBe('Fizz');
+  expect(fizzBuzzThree(19)).toBe(19);
+  expect(fizzBuzzThree(20)).toBe('Buzz');
+  expect(fizzBuzzThree(21)).toBe('Fizz');
+  expect(fizzBuzzThree(22)).toBe(22);
+  expect(fizzBuzzThree(23)).toBe(23);
+  expect(fizzBuzzThree(24)).toBe('Fizz');
+  expect(fizzBuzzThree(25)).toBe('Buzz');
+  expect(fizzBuzzThree(26)).toBe(26);
+  expect(fizzBuzzThree(27)).toBe('Fizz');
+  expect(fizzBuzzThree(28)).toBe(28);
+  expect(fizzBuzzThree(29)).toBe(29);
+  expect(fizzBuzzThree(30)).toBe('FizzBuzz');
+});
+
+test('fizz buzz four', () => {
+  expect(fizzBuzzFour(1)).toBe(1);
+  expect(fizzBuzzFour(2)).toBe(2);
+  expect(fizzBuzzFour(3)).toBe('Fizz');
+  expect(fizzBuzzFour(4)).toBe(4);
+  expect(fizzBuzzFour(5)).toBe('Buzz');
+  expect(fizzBuzzFour(6)).toBe('Fizz');
+  expect(fizzBuzzFour(7)).toBe(7);
+  expect(fizzBuzzFour(8)).toBe(8);
+  expect(fizzBuzzFour(9)).toBe('Fizz');
+  expect(fizzBuzzFour(10)).toBe('Buzz');
+  expect(fizzBuzzFour(11)).toBe(11);
+  expect(fizzBuzzFour(12)).toBe('Fizz');
+  expect(fizzBuzzFour(13)).toBe(13);
+  expect(fizzBuzzFour(14)).toBe(14);
+  expect(fizzBuzzFour(15)).toBe('FizzBuzz');
+  expect(fizzBuzzFour(16)).toBe(16);
+  expect(fizzBuzzFour(17)).toBe(17);
+  expect(fizzBuzzFour(18)).toBe('Fizz');
+  expect(fizzBuzzFour(19)).toBe(19);
+  expect(fizzBuzzFour(20)).toBe('Buzz');
+  expect(fizzBuzzFour(21)).toBe('Fizz');
+  expect(fizzBuzzFour(22)).toBe(22);
+  expect(fizzBuzzFour(23)).toBe(23);
+  expect(fizzBuzzFour(24)).toBe('Fizz');
+  expect(fizzBuzzFour(25)).toBe('Buzz');
+  expect(fizzBuzzFour(26)).toBe(26);
+  expect(fizzBuzzFour(27)).toBe('Fizz');
+  expect(fizzBuzzFour(28)).toBe(28);
+  expect(fizzBuzzFour(29)).toBe(29);
+  expect(fizzBuzzFour(30)).toBe('FizzBuzz');
+});
+
+test('fizz buzz this is terrible', () => {
+  expect(fizzBuzzFive(1)).toBe(1);
+  expect(fizzBuzzFive(2)).toBe(2);
+  expect(fizzBuzzFive(3)).toBe('Fizz');
+  expect(fizzBuzzFive(4)).toBe(4);
+  expect(fizzBuzzFive(5)).toBe('Buzz');
+  expect(fizzBuzzFive(6)).toBe('Fizz');
+  expect(fizzBuzzFive(7)).toBe(7);
+  expect(fizzBuzzFive(8)).toBe(8);
+  expect(fizzBuzzFive(9)).toBe('Fizz');
+  expect(fizzBuzzFive(10)).toBe('Buzz');
+  expect(fizzBuzzFive(11)).toBe(11);
+  expect(fizzBuzzFive(12)).toBe('Fizz');
+  expect(fizzBuzzFive(13)).toBe(13);
+  expect(fizzBuzzFive(14)).toBe(14);
+  expect(fizzBuzzFive(15)).toBe('FizzBuzz');
+  expect(fizzBuzzFive(16)).toBe(16);
+  expect(fizzBuzzFive(17)).toBe(17);
+  expect(fizzBuzzFive(18)).toBe('Fizz');
+  expect(fizzBuzzFive(19)).toBe(19);
+  expect(fizzBuzzFive(20)).toBe('Buzz');
+  expect(fizzBuzzFive(21)).toBe('Fizz');
+  expect(fizzBuzzFive(22)).toBe(22);
+  expect(fizzBuzzFive(23)).toBe(23);
+  expect(fizzBuzzFive(24)).toBe('Fizz');
+  expect(fizzBuzzFive(25)).toBe('Buzz');
+  expect(fizzBuzzFive(26)).toBe(26);
+  expect(fizzBuzzFive(27)).toBe('Fizz');
+  expect(fizzBuzzFive(28)).toBe(28);
+  expect(fizzBuzzFive(29)).toBe(29);
+  expect(fizzBuzzFive(30)).toBe('FizzBuzz');
+});
