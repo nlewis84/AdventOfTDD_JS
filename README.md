@@ -1,103 +1,114 @@
-# Advent of Code 2023 - TDD Javascript
+# 🎄 Advent of Code 2023 - TDD JavaScript 🌟
 
-Advent of Code 2023 is a yearly event where you solve a series of programming puzzles. This is the repo where I will be storing my solutions. The template this repo is based on is [here]().
+Welcome to **AdventOfTDD_JS**! 🚀 Get ready to dive into a winter wonderland of coding puzzles with the Advent of Code 2023. This repo is your sleigh ride through the fascinating world of JavaScript and Test-Driven Development (TDD). 🎅🏻❄️
 
-### Prerequisites
+The magic template this repo is based on can be found [here](https://github.com/nlewis84/AdventOfTDD_JS).
 
-- [Node 20](https://nodejs.org)
-- [yarn](https://yarnpkg.com)
-- [VSCode](https://code.visualstudio.com) (Preferred)
+### 📚 Prerequisites
 
-# Getting Started with the template
+- [Node 20](https://nodejs.org) 🎁
+- [yarn](https://yarnpkg.com) 🧶
+- [VSCode](https://code.visualstudio.com) (Preferred) 🖥️
 
-Make sure to build the project and pull down package dependencies by running `yarn` under the root of the Template.
+## 🚀 Getting Started with the Template
 
-This Template is separated into two folders `src` and `tests`.
-`src` will be for any features you create and `tests` is where you'll be testing against them. This isn't set up to be a web or mobile project, but it will mimic a similar project structure.
+Build the project and pull down package dependencies by running `yarn` at the root of the Template.
 
-The `tests` folder is separated even further. It has different kinds of tests grouped together. Only `unit` type tests are there at the moment but `e2e` or `integration` tests can be added as well. Notice how the tests are under `unit/features`. For organization, these tests should match the folder structure as they do under `src`.
+This Template is organized into two folders: `src` and `tests`.
 
-This Template is already configured to work with both `jest` and `vitest` so feel free to pick your favorite and start testing.
+- `src`: Your stage for creating dazzling creations 🌈
+- `tests`: The arena to test your creations 🧪
 
-## Creating and Testing a Simple "Hello World" Program with Jest
+Note: This setup is not for web or mobile projects, but rather a playground for your JavaScript quests.
+
+### 🔍 Inside `tests` Folder
+
+Here, tests are grouped by type. Currently, it's set up for `unit` tests, but feel free to add `e2e` or `integration` tests. Organize these tests under `unit` to mirror the `src` structure.
+
+Both `jest` and `vitest` are configured for your testing pleasure. Choose your champion and begin the battle against bugs! ⚔️
+
+## 🎁 Creating and Testing a Simple "Hello World" Program with Jest
 
 1. **Create a New Feature File:**
-   - First, create a new JavaScript file in the `src` folder. For example, let's create a simple "Hello World" program.
-   - Run the following command in your terminal to create the file:
+
+   - Invoke the spirit of JS with a "Hello World" program in the `src` folder.
+   - Command for creation:
      ```bash
      touch src/helloWorld.js
      ```
 
-2. **Write the "Hello World" Code:**
-   - Open `src/helloWorld.js` in your editor and add the following code:
+2. **Craft the "Hello World" Code:**
+
+   - Open `src/helloWorld.js` and let these lines of code bring joy:
+
      ```javascript
      function helloWorld() {
-       return 'Hello World';
+       return "Hello World";
      }
 
      module.exports = helloWorld;
      ```
 
-3. **Create a Test File for the Feature:**
-   - Next, create a test file in the `tests/unit` folder.
-   - Ensure the directory exists and create the test file with these commands:
+3. **Conjure a Test File:**
+
+   - Create a test file in `tests/unit`.
+   - Set it up with:
      ```bash
      mkdir -p tests/unit
      touch tests/unit/helloWorld.test.js
      ```
 
-4. **Write the Test for "Hello World":**
-   - Open `tests/unit/helloWorld.test.js` in your editor and add the following test code:
-     ```javascript
-     const helloWorld = require('../../src/helloWorld');
+4. **Weave the Test for "Hello World":**
 
-     test('says hello', () => {
-       expect(helloWorld()).toBe('Hello World');
+   - Open `tests/unit/helloWorld.test.js` and test your magic:
+
+     ```javascript
+     const helloWorld = require("../../src/helloWorld");
+
+     test("says hello", () => {
+       expect(helloWorld()).toBe("Hello World");
      });
      ```
 
-5. **Run the Tests:**
-   - To run the tests, use the Jest testing framework with the command `yarn jest`.
-   - This command will run all test files in your project, including the new test for your "Hello World" program.
+5. **Unleash the Tests:**
 
-6. **Run the "Hello World" Program:**
-   - Optionally, you can run the "Hello World" program directly using Node.js.
-   - Run `node src/helloWorld.js` in the terminal. You might need to modify the `helloWorld.js` file to log the output if you want to see it in the console.
+   - Run them with the mighty `yarn jest`.
+   - This will evoke all the test spirits in your realm.
 
-## Available Scripts
+6. **Behold the "Hello World" Program:**
+   - Optionally, run it directly with Node.js:
+   - Cast `node src/helloWorld.js` into your terminal.
 
-In the project directory, you can run:
+## 🧙‍♂️ Available Scripts
+
+Within this enchanted project directory, you can run:
 
 ### `yarn jest`
 
-Runs all the jest tests.
+- Summons all jest tests. 🧪
 
 ### `yarn jest:unit`
 
-Runs all jest tests under the `unit` folder.
+- Calls forth jest tests under the `unit` folder. 📚
 
 ### `yarn vitest`
 
-Runs all the vitest tests.
+- Evokes all the vitest tests. 🌌
 
 ### `yarn vitest:unit`
 
-Runs all the vitests tests under the `unit` folder.
+- Conjures vitest tests under the `unit` folder. 🔮
 
 ### `yarn test:all`
 
-Runs all jest and vitest tests.
+- A grand incantation to run all jest and vitest tests. 🎩
 
 ### `yarn format`
 
- - Format all the files in the project using [prettier](https://prettier.io/) 
- - Targets all files, except those in noted in the `.prettierignore` file
- - Applies the formatting rules in the `.prettierrc` file
+- Enchants your code with [prettier](https://prettier.io/) formatting. ✨
 
 ### `yarn lint`
 
- - Lints all the files in the project using [ESLint](https://eslint.org/)
- - It targets all files, except those in noted in the `.eslintignore` file
- - Applies the linting rules in the `.eslintrc` file
- - Includes a caching mechanism to speed up subsequent lint runs
-     - Stores the cache in the `./node_modules/.cache/eslint` directory.
+- Cleanses your code using the powers of [ESLint](https://eslint.org/). 🧹
+
+Embark on your festive coding journey with AdventOfTDD_JS and unwrap the joy of problem-solving every day! Let's code, test, and celebrate the season of coding! 🌟🎄🚀
