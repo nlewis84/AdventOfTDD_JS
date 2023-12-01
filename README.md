@@ -29,15 +29,7 @@ Both `jest` and `vitest` are configured for your testing pleasure. Choose your c
 
 ## 🎁 Creating and Testing a Simple "Hello World" Program with Jest
 
-1. **Create a New Feature File:**
-
-   - Invoke the spirit of JS with a "Hello World" program in the `src` folder.
-   - Command for creation:
-     ```bash
-     touch src/helloWorld.js
-     ```
-
-2. **Craft the "Hello World" Code:**
+1. **Craft the "Hello World" Code:**
 
    - Open `src/helloWorld.js` and let these lines of code bring joy:
 
@@ -49,16 +41,7 @@ Both `jest` and `vitest` are configured for your testing pleasure. Choose your c
      module.exports = helloWorld;
      ```
 
-3. **Conjure a Test File:**
-
-   - Create a test file in `tests/unit`.
-   - Set it up with:
-     ```bash
-     mkdir -p tests/unit
-     touch tests/unit/helloWorld.test.js
-     ```
-
-4. **Weave the Test for "Hello World":**
+2. **Weave the Test for "Hello World":**
 
    - Open `tests/unit/helloWorld.test.js` and test your magic:
 
@@ -70,12 +53,12 @@ Both `jest` and `vitest` are configured for your testing pleasure. Choose your c
      });
      ```
 
-5. **Unleash the Tests:**
+3. **Unleash the Tests:**
 
    - Run them with the mighty `yarn jest`.
    - This will evoke all the test spirits in your realm.
 
-6. **Behold the "Hello World" Program:**
+4. **Behold the "Hello World" Program:**
    - Optionally, run it directly with Node.js:
    - Cast `node src/helloWorld.js` into your terminal.
 
