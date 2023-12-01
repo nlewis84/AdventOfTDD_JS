@@ -35,21 +35,24 @@ Both `jest` and `vitest` are configured for your testing pleasure. Choose your c
 
      ```javascript
      function helloWorld() {
-       return "Hello World";
+       return "🎄 Hello World and Happy Holidays!";
      }
+
+     // Call the function and log its output
+     console.log(helloWorld());
 
      module.exports = helloWorld;
      ```
 
 2. **Weave the Test for "Hello World":**
 
-   - Open `tests/unit/helloWorld.test.js` and test your magic:
+   - Open `tests/unit/helloWorld.jest.test.js` and test your magic:
 
      ```javascript
      const helloWorld = require("../../src/helloWorld");
 
-     test("says hello", () => {
-       expect(helloWorld()).toBe("Hello World");
+     test("greets the world with festive cheer", () => {
+       expect(helloWorld()).toBe("🎄 Hello World and Happy Holidays!");
      });
      ```
 
